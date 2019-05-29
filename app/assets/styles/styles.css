@@ -1,15 +1,6 @@
-$white : #fff;
+@import "modules/_large-hero";
+@import "base/_global";
+@import "base/_variables";
+@import "normalize.css";
+@import "modules/_btn";
 
-body{
-	color: $white;
-	background-color: red;
-	margin: 10px;
-	columns: 300px 2;
-}
-
-.box {
-	a{
-		display: block;
-		padding: 10px;
-	}
-}
