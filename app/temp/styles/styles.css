@@ -77,7 +77,8 @@ figure {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -113,7 +114,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -320,7 +322,8 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -353,7 +356,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
@@ -457,7 +461,12 @@ img {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a{
+	 color: #d59541;
 }
 
 .large-hero {
@@ -473,7 +482,8 @@ img {
 .large-hero__text-content {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
@@ -652,6 +662,10 @@ img {
     margin-bottom: 1.6em;
   }
 
+.headline--no-t-margin{
+    margin-top: 0;
+  }
+
 .row::after {
     content: "";
     clear: both;
@@ -666,7 +680,16 @@ img {
     padding-right: 65px;
   }
 
+.row__b-margin-until-medium{
+    margin-bottom: 1rem;
+  }
+
 @media (min-width: 800px) {
+
+    .row__b-margin-until-medium{
+    margin-bottom: 0;
+    }
+
     .row__medium-4 {
       float: left;
       width: 33.33%;
@@ -685,3 +708,20 @@ img {
       width: 63%;
     }
   }
+
+.generic-content-container p{
+		line-height: 1.65;
+		font-size: 1rem;
+		margin: 1.8rem 0;
+	}
+
+@media (min-width: 530px) {
+
+.generic-content-container p{
+			font-size: 1.125rem
+	}
+  }
+
+.generic-content-container p a{
+		font-weight: 700;
+	}
