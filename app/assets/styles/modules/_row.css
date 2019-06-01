@@ -101,20 +101,24 @@
     @mixin atMedium{
       display: flex;
     }
+
+    & > div{
+      display: flex;
+    }
+
   }
 
-  & > div{
-    display: flex;
-  }
+  
 
 
   &--equal-height-at-large{
     @mixin atLarge{
       display: flex;
     }
+     & > div{
+      display: flex;
+    }
   }
 
-  & > div{
-    display: flex;
-  }
+ 
 }
