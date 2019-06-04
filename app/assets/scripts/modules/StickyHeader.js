@@ -14,7 +14,7 @@ class StickyHeader{
 		this.createPageSectionWaypoints();
 		this.addSmoothScroll();
 		this.refreshWaypoints();
-	}
+	} 
 
 	refreshWaypoints(){
 		this.lazyImages.on('load',function(){
