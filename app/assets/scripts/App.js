@@ -1,5 +1,6 @@
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
 import $ from 'jquery';
 
 
@@ -18,3 +19,4 @@ var test = {
 
 var features = new RevealOnScroll(features.select, features.percent);
 var testimonial = new RevealOnScroll(test.select, test.percent);
+var sticky = new StickyHeader();
